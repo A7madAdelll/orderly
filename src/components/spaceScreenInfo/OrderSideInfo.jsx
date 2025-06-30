@@ -49,12 +49,7 @@ export default function OrderSideInfo() {
       setFinalizedOrder({
         orderName: "Test Order",
         restaurant: "Test Restaurant",
-        collectiveOrder: [
-          // { qty: 2, itemName: "Burger", pricePerItem: 10.0, subtotal: 20.0 },
-          // { qty: 1, itemName: "Fries", pricePerItem: 3.0, subtotal: 3.0 },
-          dislayMenuData[0],
-          dislayMenuData[1],
-        ],
+        collectiveOrder: [...dislayMenuData],
         grandTotal: 23.0,
         participantOrders: [
           {
